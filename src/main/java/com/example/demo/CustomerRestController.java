@@ -6,13 +6,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.Collection;
+@Controller
 public class CustomerRestController {
     private final CustomerService customerService;
     public CustomerRestController(CustomerService customerService) {
         this.customerService = customerService;
     }
 
-    @GetMapping("/")
+    @RequestMapping("/")
+    @ResponseBody
     String Home() {
         return "Hello world";
     }
