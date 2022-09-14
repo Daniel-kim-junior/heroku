@@ -14,7 +14,7 @@
 						<manifest>
 
 							<!-- give full qualified name of your main class-->
-							<mainClass>com.example.Demo</mainClass>
+							<mainClass>com.example.Demo.DemoApplication</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
