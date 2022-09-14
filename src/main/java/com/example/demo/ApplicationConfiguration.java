@@ -12,10 +12,10 @@ import javax.sql.DataSource;
 
 @ComponentScan
 public class ApplicationConfiguration {
-    @Bean(destroyMethod = "shutdown")
-    DataSource dataSource() {
-        return new EmbeddedDatabaseBuilder().setType(EmbeddedDatabaseType.H2).setName("customers").build();
-    }
+//    @Bean(destroyMethod = "shutdown")
+//    DataSource dataSource() {
+//        return new EmbeddedDatabaseBuilder().setType(EmbeddedDatabaseType.H2).setName("customers").build();
+//    }
 
     @Bean
     JdbcTemplate jdbcTemplate(DataSource dataSource) {
